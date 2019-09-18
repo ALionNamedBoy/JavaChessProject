@@ -1,16 +1,20 @@
 package sample;
 
 import javafx.application.Application;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.GridPane;
 import javafx.scene.layout.TilePane;
 import javafx.stage.Stage;
 
 import java.util.ArrayList;
 
-public class Main extends Application {
+public class Main extends Application implements EventHandler<ActionEvent> {
+
+    Button button = new Button();
 
     @Override
     public void start(Stage primaryStage) throws Exception{
@@ -32,6 +36,12 @@ public class Main extends Application {
         imgView.get(1).setImage(wBishop);
         imgView.get(2).setImage(bKing);
         imgView.get(3).setImage(wKing);
+        button.setText("ok");
+        button.setOnAction(e -> {
+            imgView.get(0).setImage(null);
+            imgView.get(1).setImage(bBishop);
+        });
+        root.getChildren().add(button);
         primaryStage.setTitle("Hello World");
         Scene scene = new Scene(root);
         primaryStage.setScene(scene);
@@ -39,6 +49,9 @@ public class Main extends Application {
         primaryStage.show();
     }
 
+    public void handle(ActionEvent e){
+
+    }
 
     public static void main(String[] args) {
         launch(args);
