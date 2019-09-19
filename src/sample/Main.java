@@ -7,10 +7,9 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.StackPane;
 import javafx.scene.layout.TilePane;
 import javafx.stage.Stage;
-
-import java.util.ArrayList;
 
 public class Main extends Application implements EventHandler<ActionEvent> {
 
@@ -19,31 +18,36 @@ public class Main extends Application implements EventHandler<ActionEvent> {
     @Override
     public void start(Stage primaryStage) throws Exception{
         //Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-        TilePane root = new TilePane();
-        ArrayList<ImageView> imgView = new ArrayList<>();
-        Image bBishop = new Image("sample/images/45px-Chess_bdt45.svg.png");
-        Image wBishop = new Image("sample/images/45px-Chess_blt45.svg.png");
-        Image bKing = new Image("sample/images/45px-Chess_kdt45.svg.png");
-        Image wKing = new Image("sample/images/45px-Chess_klt45.svg.png");
-        System.out.println(imgView.size());
-        root.setHgap(8);
-        root.setPrefColumns(4);
-        for (int i = 0; i < 4; i++) {
-            imgView.add(new ImageView());
-            root.getChildren().add(imgView.get(i));
+        TilePane pane = new TilePane();
+        pane.setHgap(0);
+        pane.setVgap(0);
+        pane.setPrefColumns(8);
+        pane.setPrefRows(8);
+
+        ImageView[][] boardState = new ImageView[8][8];
+        Controller controller = new Controller(boardState);
+
+        Image blkImg = new Image("sample/images/blackSquare.png");
+        Image whtImg = new Image("sample/images/whiteSquare.png");
+
+
+        for (int i = 0; i < 8; i++){
+            for (int j = 0; j < 8; j++){
+                boardState[i][j] = new ImageView();
+                final int i2 = i;
+                final int j2 = j;
+                boardState[i][j].setOnMouseClicked(e -> {
+                    controller.handle( i2, j2);
+                });
+                ImageView background;
+                if ( (i+j) % 2 == 1) background = new ImageView(whtImg);
+                else background = new ImageView(blkImg);
+
+                pane.getChildren().add(new StackPane(background, boardState[i][j]));
+            }
         }
-        imgView.get(0).setImage(bBishop);
-        imgView.get(1).setImage(wBishop);
-        imgView.get(2).setImage(bKing);
-        imgView.get(3).setImage(wKing);
-        button.setText("ok");
-        button.setOnAction(e -> {
-            imgView.get(0).setImage(null);
-            imgView.get(1).setImage(bBishop);
-        });
-        root.getChildren().add(button);
-        primaryStage.setTitle("Hello World");
-        Scene scene = new Scene(root);
+
+        Scene scene = new Scene(pane);
         primaryStage.setScene(scene);
 
         primaryStage.show();
