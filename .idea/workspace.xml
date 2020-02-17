@@ -5,19 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/images/45px-Chess_bdt45.svg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/images/bBishop.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/images/45px-Chess_blt45.svg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/images/wBishop.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/images/45px-Chess_kdt45.svg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/images/bKing.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/images/45px-Chess_klt45.svg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/images/wKing.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/images/45px-Chess_ndt45.svg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/images/bKnight.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/images/45px-Chess_nlt45.svg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/images/wKnight.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/images/45px-Chess_pdt45.svg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/images/bPawn.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/images/45px-Chess_qdt45.svg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/images/bQueen.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/images/45px-Chess_qlt45.svg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/images/wQueen.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/images/45px-Chess_rdt45.svg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/images/bRook.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/images/45px-Chess_rlt45.svg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/images/wRook.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/images/Chess_plt45.svg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/images/wPawn.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/module-info.java" beforeDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -77,29 +64,32 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-87">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="506">
+              <caret line="44" column="32" lean-forward="true" selection-start-line="44" selection-start-column="32" selection-end-line="44" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1866#1867#0" expanded="true" />
+                <element signature="e#1674#1675#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/images/bQueen.png">
-          <provider selected="true" editor-type-id="images" />
+        <entry file="jar://C:/Program Files/Java/javafx-sdk-12.0.1/lib/javafx.base.jar!/javafx/event/EventHandler.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="232">
+              <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+            <state relative-caret-position="377">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
               <folding>
-                <element signature="e#185#186#0" expanded="true" />
-                <element signature="e#212#213#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -113,6 +103,15 @@
         <option value="module-info" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>setonmouseclicked</find>
+      <find>boardState</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>pieces</replace>
+    </replaceStrings>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -130,13 +129,13 @@
         <option value="$PROJECT_DIR$/src/sample/module-info.java" />
         <option value="$PROJECT_DIR$/src/sample/sample.fxml" />
         <option value="$PROJECT_DIR$/module-info.java" />
-        <option value="$PROJECT_DIR$/src/sample/Controller.java" />
         <option value="$PROJECT_DIR$/src/sample/Main.java" />
+        <option value="$PROJECT_DIR$/src/sample/Controller.java" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="203" />
     <option name="y" value="45" />
     <option name="width" value="1612" />
@@ -151,8 +150,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -338,15 +337,15 @@
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.17123288" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.14172813" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="Learn" order="4" weight="0.32973316" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32917964" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2751817" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997923" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -398,10 +397,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/module-info.java" />
-    <entry file="file://$PROJECT_DIR$/src/sample/sample.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-      <provider editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/images/bBishop.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -441,24 +436,68 @@
     <entry file="file://$PROJECT_DIR$/src/sample/images/bQueen.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/sample.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+      <provider editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module-info.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://C:/Program Files/Java/javafx-sdk-12.0.1/lib/javafx.graphics.jar!/javafx/css/Styleable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/javafx-sdk-12.0.1/lib/javafx.base.jar!/javafx/event/EventTarget.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/javafx-sdk-12.0.1/lib/javafx.graphics.jar!/javafx/scene/Node.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="142" column="42" selection-start-line="142" selection-start-column="42" selection-end-line="142" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/javafx-sdk-12.0.1/lib/javafx.graphics.jar!/javafx/scene/image/ImageView.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="41" column="31" lean-forward="true" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/javafx-sdk-12.0.1/lib/javafx.base.jar!/javafx/event/EventHandler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/images/whiteSquare.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+        <state relative-caret-position="377">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
           <folding>
-            <element signature="e#185#186#0" expanded="true" />
-            <element signature="e#212#213#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-87">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="506">
+          <caret line="44" column="32" lean-forward="true" selection-start-line="44" selection-start-column="32" selection-end-line="44" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1866#1867#0" expanded="true" />
+            <element signature="e#1674#1675#0" expanded="true" />
           </folding>
         </state>
       </provider>

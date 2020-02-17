@@ -17,35 +17,32 @@ public class Main extends Application implements EventHandler<ActionEvent> {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        //Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
         TilePane pane = new TilePane();
         pane.setHgap(0);
         pane.setVgap(0);
         pane.setPrefColumns(8);
         pane.setPrefRows(8);
 
-        ImageView[][] boardState = new ImageView[8][8];
-        Controller controller = new Controller(boardState);
+        ImageView[][] pieces = new ImageView[8][8];
+        ImageView[][] background = new ImageView[8][8];
+        Controller controller = new Controller(pieces, background);
 
-        Image blkImg = new Image("sample/images/blackSquare.png");
-        Image whtImg = new Image("sample/images/whiteSquare.png");
+        for (int j = 0; j < 8; j++){
+            for (int i = 0; i < 8; i++){
+                background[i][j] = new ImageView();
+                pieces[i][j] = new ImageView();
 
-
-        for (int i = 0; i < 8; i++){
-            for (int j = 0; j < 8; j++){
-                boardState[i][j] = new ImageView();
                 final int i2 = i;
                 final int j2 = j;
-                boardState[i][j].setOnMouseClicked(e -> {
+                StackPane currentPane = new StackPane(background[i][j], pieces[i][j]);
+                currentPane.setOnMouseClicked(e -> {
                     controller.handle( i2, j2);
                 });
-                ImageView background;
-                if ( (i+j) % 2 == 1) background = new ImageView(whtImg);
-                else background = new ImageView(blkImg);
 
-                pane.getChildren().add(new StackPane(background, boardState[i][j]));
+                pane.getChildren().add(currentPane);
             }
         }
+        controller.initialize();
 
         Scene scene = new Scene(pane);
         primaryStage.setScene(scene);
